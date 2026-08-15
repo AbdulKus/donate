@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f6f6f3" media="(prefers-color-scheme:light)">
+  <meta name="theme-color" content="#0d0d0d" media="(prefers-color-scheme:dark)">
+  <meta name="description" content="Support open-source development via Boosty or crypto.">
+  <title>Support development</title>
+  <style>
+    :root{color-scheme:light dark;--bg:#f6f6f3;--card:#fff;--card2:#efefec;--text:#111;--muted:#70706b;--line:#e1e1dc;--accent:#111;--accentText:#fff;--shadow:0 20px 70px rgba(0,0,0,.14)}
+    @media(prefers-color-scheme:dark){:root{--bg:#0d0d0d;--card:#151515;--card2:#1d1d1d;--text:#f4f4f1;--muted:#999994;--line:#2b2b2b;--accent:#f4f4f1;--accentText:#111;--shadow:0 24px 80px rgba(0,0,0,.5)}}
+    *{box-sizing:border-box}html,body{margin:0;min-height:100%}body{min-height:100dvh;background:var(--bg);color:var(--text);font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}button,a{font:inherit}button{color:inherit}.shell{width:min(100%,620px);min-height:100dvh;margin:auto;padding:max(28px,env(safe-area-inset-top)) 18px max(18px,env(safe-area-inset-bottom));display:flex;flex-direction:column}.content{flex:1;display:flex;align-items:center;padding:52px 0 30px}.view{width:100%;animation:in .2s ease both}.view[hidden]{display:none}@keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}.kicker{margin:0 0 10px;color:var(--muted);font-size:12px;font-weight:750;letter-spacing:.1em;text-transform:uppercase}h1{margin:0;max-width:520px;font-size:clamp(38px,9vw,58px);line-height:1.02;letter-spacing:-.05em;font-weight:760}.lead{margin:14px 0 30px;color:var(--muted);font-size:17px;line-height:1.5}.stack,.networks{display:grid;gap:10px}.item{width:100%;min-height:76px;border:1px solid var(--line);border-radius:16px;background:var(--card);display:flex;align-items:center;gap:14px;padding:14px 16px;color:var(--text);text-decoration:none;text-align:left;cursor:pointer;transition:.15s ease;-webkit-tap-highlight-color:transparent}.item:hover{background:var(--card2);border-color:color-mix(in srgb,var(--line) 50%,var(--text))}.item:active{transform:scale(.993)}.icon{width:46px;height:46px;flex:0 0 auto;border-radius:13px;background:var(--card2);display:grid;place-items:center;overflow:hidden}.icon img{width:26px;height:26px;object-fit:contain}.fallback{display:none;font-size:13px;font-weight:800}.copyText{min-width:0;flex:1}.title{display:block;font-size:16px;font-weight:700;letter-spacing:-.015em}.note{display:block;margin-top:3px;color:var(--muted);font-size:13px}.arrow{width:18px;height:18px;flex:0 0 auto;color:var(--muted)}.viewHead{display:flex;align-items:center;gap:12px;margin-bottom:24px}.round{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:var(--card);display:grid;place-items:center;padding:0;cursor:pointer}.viewHead h2{margin:0;font-size:28px;letter-spacing:-.035em}.viewHead p{margin:2px 0 0;color:var(--muted);font-size:13px}.network{min-height:66px;padding:11px 13px}.network .icon{width:40px;height:40px;border-radius:12px}.network .icon img{width:25px;height:25px}@media(min-width:540px){.networks{grid-template-columns:1fr 1fr}}.langs{display:flex;justify-content:center;flex-wrap:wrap;gap:2px;padding-top:16px}.lang{border:0;background:transparent;color:var(--muted);border-radius:9px;padding:8px 9px;font-size:12px;font-weight:750;letter-spacing:.04em;cursor:pointer}.lang[aria-pressed="true"]{color:var(--text);background:var(--card2)}dialog{width:min(calc(100% - 28px),440px);padding:0;border:0;border-radius:24px;background:var(--card);color:var(--text);box-shadow:var(--shadow);overflow:visible}dialog::backdrop{background:rgba(0,0,0,.5);backdrop-filter:blur(4px)}.modal{padding:18px 18px 20px}.modalHead{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}.networkIdentity{display:flex;align-items:center;gap:10px;min-width:0}.networkIdentity .icon{width:38px;height:38px}.modalTitle{margin:0;font-size:18px;font-weight:750;letter-spacing:-.025em}.modalSub{margin:2px 0 0;color:var(--muted);font-size:12px}.close{width:38px;height:38px}.qrWrap{display:grid;place-items:center;margin:4px auto 18px}.qrFrame{position:relative;display:inline-grid;place-items:center;padding:18px;border-radius:20px;background:#fff}.qr{width:232px;height:232px;display:grid;place-items:center}.qr img,.qr canvas{width:232px!important;height:232px!important;display:block}.qrBadge{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:48px;height:48px;border-radius:14px;background:#fff;border:7px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.06);display:grid;place-items:center}.qrBadge img{width:30px;height:30px}.qrBadge .fallback{color:#111}.label{display:block;margin:0 0 7px;color:var(--muted);font-size:12px;font-weight:650}.addressRow{border:1px solid var(--line);border-radius:14px;background:var(--card2);display:flex;align-items:center;gap:10px;padding:8px 8px 8px 12px}.address{min-width:0;flex:1;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;line-height:1.45;overflow-wrap:anywhere;user-select:all}.copyBtn{flex:0 0 auto;border:0;border-radius:10px;background:var(--accent);color:var(--accentText);padding:10px 12px;font-size:12px;font-weight:780;cursor:pointer}.warning{margin:10px 2px 0;color:var(--muted);font-size:12px;line-height:1.45}.toast{position:fixed;left:50%;bottom:max(22px,env(safe-area-inset-bottom));z-index:999;transform:translate(-50%,14px);opacity:0;pointer-events:none;background:var(--text);color:var(--bg);padding:10px 14px;border-radius:999px;font-size:13px;font-weight:700;transition:.18s}.toast.show{opacity:1;transform:translate(-50%,0)}button:focus-visible,a:focus-visible{outline:2px solid var(--text);outline-offset:3px}@media(max-width:540px){.shell{padding-left:16px;padding-right:16px}.content{align-items:flex-start;padding-top:50px}dialog{width:100%;max-width:none;margin:auto 0 0;border-radius:24px 24px 0 0}.modal{padding-bottom:max(22px,env(safe-area-inset-bottom))}.qr,.qr img,.qr canvas{width:min(232px,62vw)!important;height:min(232px,62vw)!important}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="content">
+      <main id="home" class="view">
+        <p class="kicker" data-t="kicker">Open source</p>
+        <h1 data-t="headline">Support development</h1>
+        <p class="lead" data-t="lead">Choose a way to support the project.</p>
+        <div class="stack">
+          <a class="item" href="https://boosty.to/free_vibrancy/donate" target="_blank" rel="noopener noreferrer">
+            <span class="icon" aria-hidden="true"><img src="https://api.iconify.design/simple-icons/boosty.svg?color=%23F15F2C" alt="" onerror="iconFail(this)"><span class="fallback">B</span></span>
+            <span class="copyText"><span class="title">Boosty</span><span class="note" data-t="boosty">Card payment</span></span>
+            <svg class="arrow" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <button class="item" id="openCrypto" type="button">
+            <span class="icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.25" stroke="currentColor" stroke-width="1.5"/><path d="M8.5 9.25h5a2.25 2.25 0 010 4.5h-5m3-7v10m2-10v2.5m0 4.5v2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+            <span class="copyText"><span class="title" data-t="crypto">Crypto</span><span class="note" data-t="networks">10 networks</span></span>
+            <svg class="arrow" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </main>
+
+      <section id="crypto" class="view" hidden>
+        <div class="viewHead">
+          <button class="round" id="back" type="button" data-a="back" aria-label="Back"><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div><h2 data-t="crypto">Crypto</h2><p data-t="choose">Choose a network</p></div>
+        </div>
+        <div class="networks" id="networkList"></div>
+      </section>
+    </div>
+    <nav class="langs" aria-label="Language">
+      <button class="lang" type="button" data-lang="en">EN</button><button class="lang" type="button" data-lang="ru">RU</button><button class="lang" type="button" data-lang="be">BE</button><button class="lang" type="button" data-lang="de">DE</button><button class="lang" type="button" data-lang="pl">PL</button>
+    </nav>
+  </div>
+
+  <dialog id="wallet">
+    <div class="modal">
+      <div class="modalHead">
+        <div class="networkIdentity"><span class="icon" id="modalIcon" aria-hidden="true"></span><div><h3 class="modalTitle" id="modalTitle"></h3><p class="modalSub" id="modalTag"></p></div></div>
+        <button class="round close" id="close" type="button" data-a="close" aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+      </div>
+      <div class="qrWrap"><div class="qrFrame"><div class="qr" id="qrcode" aria-label="Wallet QR code"></div><span class="qrBadge" id="qrBadge" aria-hidden="true"></span></div></div>
+      <span class="label" data-t="address">Wallet address</span>
+      <div class="addressRow"><span class="address" id="walletAddress"></span><button class="copyBtn" id="copy" type="button" data-t="copy">Copy</button></div>
+      <p class="warning" id="warning"></p>
+    </div>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script>
+    const i18n={
+      en:{kicker:'Open source',headline:'Support development',lead:'Choose a way to support the project.',boosty:'Card payment',crypto:'Crypto',networks:'10 networks',choose:'Choose a network',back:'Back',close:'Close',address:'Wallet address',copy:'Copy',copied:'Copied',warning:'Send only through the {network} network.'},
+      ru:{kicker:'Open source',headline:'Поддержать разработку',lead:'Выберите удобный способ поддержки проекта.',boosty:'Оплата картой',crypto:'Криптовалюта',networks:'10 сетей',choose:'Выберите сеть',back:'Назад',close:'Закрыть',address:'Адрес кошелька',copy:'Копировать',copied:'Скопировано',warning:'Отправляйте средства только через сеть {network}.'},
+      be:{kicker:'Open source',headline:'Падтрымаць распрацоўку',lead:'Абярыце зручны спосаб падтрымкі праекта.',boosty:'Аплата картай',crypto:'Крыптавалюта',networks:'10 сетак',choose:'Абярыце сетку',back:'Назад',close:'Закрыць',address:'Адрас кашалька',copy:'Капіяваць',copied:'Скапіявана',warning:'Адпраўляйце сродкі толькі праз сетку {network}.'},
+      de:{kicker:'Open Source',headline:'Entwicklung unterstützen',lead:'Wähle eine Möglichkeit, das Projekt zu unterstützen.',boosty:'Kartenzahlung',crypto:'Krypto',networks:'10 Netzwerke',choose:'Netzwerk auswählen',back:'Zurück',close:'Schließen',address:'Wallet-Adresse',copy:'Kopieren',copied:'Kopiert',warning:'Nur über das Netzwerk {network} senden.'},
+      pl:{kicker:'Open source',headline:'Wesprzyj rozwój',lead:'Wybierz sposób wsparcia projektu.',boosty:'Płatność kartą',crypto:'Krypto',networks:'10 sieci',choose:'Wybierz sieć',back:'Wstecz',close:'Zamknij',address:'Adres portfela',copy:'Kopiuj',copied:'Skopiowano',warning:'Wysyłaj środki wyłącznie przez sieć {network}.'}
+    };
+    const networks=[
+      {name:'BNB Chain',tag:'BNB Smart Chain',fallback:'BNB',icon:'https://api.iconify.design/simple-icons/bnbchain.svg?color=%23F0B90B',address:'0xb1C7Cc8d3522b2f7B283eEa6657a9571a518cE7D'},
+      {name:'Ethereum',tag:'Ethereum Mainnet',fallback:'Ξ',icon:'https://api.iconify.design/simple-icons/ethereum.svg?color=%23627EEA',address:'0xb1C7Cc8d3522b2f7B283eEa6657a9571a518cE7D'},
+      {name:'Bitcoin',tag:'Bitcoin',fallback:'₿',icon:'https://api.iconify.design/simple-icons/bitcoin.svg?color=%23F7931A',address:'bc1qvqwmw2sa0j5kk2rwk7d2pdtgpt686ap93cfzrg'},
+      {name:'TRON',tag:'TRON',fallback:'TRX',icon:'https://api.iconify.design/token-branded/trx.svg',address:'TPNSruWdZL2nZVtWMwixGt1nkGDZR9m4iB'},
+      {name:'Arbitrum',tag:'Arbitrum One',fallback:'ARB',icon:'https://api.iconify.design/token-branded/arbitrum-one.svg',address:'0xb1C7Cc8d3522b2f7B283eEa6657a9571a518cE7D'},
+      {name:'Solana',tag:'Solana',fallback:'SOL',icon:'https://api.iconify.design/simple-icons/solana.svg?color=%2314F195',address:'GHzesbaREhSZKLoqKZ4NeWXe5woNBXQu1JQmc2YshdgJ'},
+      {name:'Base',tag:'Base',fallback:'B',icon:'https://api.iconify.design/token-branded/base.svg',address:'0xb1C7Cc8d3522b2f7B283eEa6657a9571a518cE7D'},
+      {name:'Polygon',tag:'Polygon PoS',fallback:'POL',icon:'https://api.iconify.design/simple-icons/polygon.svg?color=%238247E5',address:'0xb1C7Cc8d3522b2f7B283eEa6657a9571a518cE7D'},
+      {name:'TON',tag:'The Open Network',fallback:'TON',icon:'https://api.iconify.design/simple-icons/ton.svg?color=%230098EA',address:'UQCuHSWQ9RvOPbVCpFogUCQfd4ttweyv3U5mOpJ_f-84-ItI'},
+      {name:'Cosmos',tag:'Cosmos Hub',fallback:'ATOM',icon:'https://api.iconify.design/cryptocurrency-color/atom.svg',address:'cosmos1ftstunuflp3qqwyh9uc6zqqu27qnkv78qmcefq'}
+    ];
+    const $=s=>document.querySelector(s), home=$('#home'),crypto=$('#crypto'),list=$('#networkList'),wallet=$('#wallet'),qrcode=$('#qrcode'),toast=$('#toast');
+    let lang='en',current=null,timer;
+    window.iconFail=img=>{img.style.display='none';const f=img.nextElementSibling;if(f)f.style.display='inline'};
+    const icon=n=>`<img src="${n.icon}" alt="" loading="lazy" onerror="iconFail(this)"><span class="fallback">${n.fallback}</span>`;
+    networks.forEach(n=>{const b=document.createElement('button');b.type='button';b.className='item network';b.innerHTML=`<span class="icon" aria-hidden="true">${icon(n)}</span><span class="copyText"><span class="title">${n.name}</span><span class="note">${n.tag}</span></span><svg class="arrow" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;b.onclick=()=>openWallet(n);list.appendChild(b)});
+    function tr(k){return i18n[lang]?.[k]??i18n.en[k]??k}
+    function setLang(l,persist=true){lang=i18n[l]?l:'en';document.documentElement.lang=lang;if(persist)localStorage.setItem('donate-language',lang);document.querySelectorAll('[data-t]').forEach(e=>e.textContent=tr(e.dataset.t));document.querySelectorAll('[data-a]').forEach(e=>e.setAttribute('aria-label',tr(e.dataset.a)));document.querySelectorAll('.lang').forEach(e=>e.setAttribute('aria-pressed',String(e.dataset.lang===lang)));document.title=tr('headline');if(current)$('#warning').textContent=tr('warning').replace('{network}',current.name)}
+    function detect(){const saved=localStorage.getItem('donate-language');if(saved&&i18n[saved])return saved;for(const l of(navigator.languages?.length?navigator.languages:[navigator.language||'en'])){const c=l.toLowerCase().split('-')[0];if(i18n[c])return c}return'en'}
+    function openWallet(n){current=n;$('#modalTitle').textContent=n.name;$('#modalTag').textContent=n.tag;$('#modalIcon').innerHTML=icon(n);$('#qrBadge').innerHTML=icon(n);$('#walletAddress').textContent=n.address;$('#warning').textContent=tr('warning').replace('{network}',n.name);qrcode.textContent='';if(typeof QRCode==='undefined'){qrcode.textContent=n.address;$('#qrBadge').hidden=true}else{$('#qrBadge').hidden=false;new QRCode(qrcode,{text:n.address,width:232,height:232,colorDark:'#111111',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.H})}wallet.showModal()}
+    function showCrypto(push=true){home.hidden=true;crypto.hidden=false;if(push&&location.hash!=='#crypto')history.pushState({view:'crypto'},'','#crypto');scrollTo({top:0,behavior:'auto'})}
+    function showHome(push=true){if(wallet.open)wallet.close();crypto.hidden=true;home.hidden=false;if(push&&location.hash)history.pushState({view:'home'},'',location.pathname+location.search);scrollTo({top:0,behavior:'auto'})}
+    function flash(m){clearTimeout(timer);toast.textContent=m;toast.classList.add('show');timer=setTimeout(()=>toast.classList.remove('show'),1500)}
+    $('#openCrypto').onclick=()=>showCrypto();$('#back').onclick=()=>history.state?.view==='crypto'?history.back():(history.replaceState({view:'home'},'',location.pathname+location.search),showHome(false));$('#close').onclick=()=>wallet.close();
+    $('#copy').onclick=async()=>{if(!current)return;try{await navigator.clipboard.writeText(current.address)}catch{const t=document.createElement('textarea');t.value=current.address;t.style.position='fixed';t.style.opacity='0';document.body.appendChild(t);t.select();document.execCommand('copy');t.remove()}flash(tr('copied'))};
+    wallet.addEventListener('click',e=>{const r=wallet.getBoundingClientRect();if(!(e.clientX>=r.left&&e.clientX<=r.right&&e.clientY>=r.top&&e.clientY<=r.bottom))wallet.close()});
+    document.querySelectorAll('.lang').forEach(b=>b.onclick=()=>setLang(b.dataset.lang));addEventListener('popstate',()=>location.hash==='#crypto'?showCrypto(false):showHome(false));setLang(detect(),false);if(location.hash==='#crypto')showCrypto(false);
+  </script>
+</body>
+</html>
