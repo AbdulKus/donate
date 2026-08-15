@@ -10,3 +10,5 @@ Minimal donation page for GitHub Pages.
 ## GitHub Pages
 
 Open **Settings → Pages** and set **Source** to **GitHub Actions**. The included workflow deploys the site on every push to `main`.
+
+Expected URL: `https://abdulkus.github.io/donate/`
