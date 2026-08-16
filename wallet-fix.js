@@ -119,7 +119,7 @@
     eligibleWallets(curN,curC).forEach(key=>{
       const info=launchInfo(key,curN,curC);if(!info)return;
       const b=document.createElement('button');b.type='button';b.className='wallet-item';
-      b.innerHTML=`<span class="wallet-logo" aria-hidden="true">${iconMarkup(key)}</span><span class="wallet-copy"><span class="wallet-name">${walletNames[key]}</span><span class="wallet-note">${tr(info.prefilled?'prefilled':'opensApp')}</span></span><span class="arrow">›</span>`;
+      b.innerHTML=`<span class="wallet-logo" aria-hidden="true">${iconMarkup(key)}</span><span class="wallet-copy"><span class="wallet-name">${walletNames[key]}</span></span><span class="arrow">›</span>`;
       b.onclick=()=>{if(!info.prefilled)copyNoWait();picker.close();location.href=info.url};
       list.appendChild(b);
     });
@@ -128,6 +128,6 @@
 
   $('#openWallet').onclick=renderWalletPicker;
   const style=document.createElement('style');
-  style.textContent='.wallet-logo svg,.wallet-cycle svg{width:100%;height:100%;display:block}.wallet-logo{padding:5px}.wallet-cycle{padding:4px}.wallet-copy{min-width:0;display:flex;flex-direction:column;gap:2px}.wallet-note{font-size:11px;line-height:1.25;color:var(--muted)}.wallet-item>.arrow{margin-left:auto}';
+  style.textContent='.wallet-logo svg,.wallet-cycle svg{width:100%;height:100%;display:block}.wallet-logo{padding:5px}.wallet-cycle{padding:4px}.wallet-copy{min-width:0;display:flex;align-items:center;align-self:stretch}.wallet-name{display:flex;align-items:center;height:100%}.wallet-item>.arrow{margin-left:auto}';
   document.head.appendChild(style);
 })();
